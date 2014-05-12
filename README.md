@@ -6,16 +6,11 @@
 Install with [npm](npmjs.org):
 
 ```bash
-npm i watch-cli --save-dev
+npm i -g watch-cli
 ```
 
 
 ## Author
-
-**Jon Schlinkert**
-
-+ [github/jonschlinkert](https://github.com/jonschlinkert)
-+ [twitter/jonschlinkert](http://twitter.com/jonschlinkert)
 
 **Brian Woodward**
 
