@@ -1,0 +1,44 @@
+{
+  "name": "watch-cli",
+  "description": "Command line wrapper for gaze to use in package.json scripts object.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/doowb/watch-cli",
+  "author": {
+    "name": "Brian Woodward",
+    "url": "https://github.com/doowb"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/doowb/watch-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/doowb/watch-cli/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/doowb/watch-cli/blob/master/LICENSE-MIT"
+    }
+  ],
+  "keywords": [
+    "docs",
+    "documentation",
+    "generate",
+    "generator",
+    "markdown",
+    "templates",
+    "verb"
+  ],
+  "main": "index.js",
+  "engines": {
+    "node": ">=0.8"
+  },
+  "scripts": {
+    "test": "mocha -R spec"
+  },
+  "devDependencies": {
+    "verb": "~0.2.0",
+    "chai": "~1.9.1",
+    "mocha": "~1.18.2"
+  }
+}
