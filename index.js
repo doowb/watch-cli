@@ -6,11 +6,9 @@ const _ = require('lodash');
 const exec = require('child_process').exec;
 
 var strip = function (str) {
-  console.log('str', str);
   var re = /^=(.*)$/;
   if (re.test(str)) {
     var matches = str.match(re);
-    console.log('matches', matches);
     return matches[1];
   }
   return str;

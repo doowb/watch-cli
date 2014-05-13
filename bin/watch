@@ -5,13 +5,9 @@ process.title = 'watch';
 var argv = require('minimist')(process.argv.slice(2));
 var watch = require('../');
 
-console.log('argv', argv);
 
 var pattern = argv._.shift() || argv.p || argv.pattern || argv.f || argv.files
-console.log('pattern', pattern);
-
 var command = argv._.shift() || argv.c || argv.cmd || argv.command;
-console.log('command', command);
 
 var options = {
   pattern: pattern,
