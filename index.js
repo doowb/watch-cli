@@ -56,9 +56,6 @@ var watch = function (options) {
           lastEvent = now;
           return;
         }
-        if (command.indexOf('npm') !== 0) {
-          command = 'npm ' + command;
-        }
         runCmd(command, function (err) {
           running = false;
           log.write('Finished ' + command);
