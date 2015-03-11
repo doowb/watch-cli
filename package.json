@@ -39,15 +39,10 @@
   "scripts": {
     "test": "mocha -R spec"
   },
-  "devDependencies": {
-    "verb": "~0.2.0",
-    "chai": "~1.9.1",
-    "mocha": "~1.18.2"
-  },
+  "devDependencies": {},
   "dependencies": {
-    "lodash": "^2.4.1",
-    "verbalize": "^0.1.2",
-    "gaze": "^0.6.4",
-    "minimist": "^0.1.0"
+    "gaze": "^0.5.1",
+    "lodash": "^3.5.0",
+    "verbalize": "^0.1.2"
   }
 }
