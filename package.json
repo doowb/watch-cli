@@ -46,5 +46,8 @@
     "markdown",
     "templates",
     "verb"
-  ]
+  ],
+  "devDependencies": {
+    "mocha": "^2.2.1"
+  }
 }
