@@ -1,7 +1,7 @@
 {
   "name": "watch-cli",
   "description": "Command line wrapper for gaze to use in package.json scripts object.",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "homepage": "https://github.com/doowb/watch-cli",
   "author": {
     "name": "Brian Woodward",
