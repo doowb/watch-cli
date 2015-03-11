@@ -1,4 +1,3 @@
-
 const log = require('verbalize');
 const gaze = require('gaze');
 const _ = require('lodash');
