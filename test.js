@@ -1,5 +1,6 @@
 describe('sample test', function () {
   it('to run', function (done) {
-    setTimeout(done, 1000);
+    setTimeout(done, 20);
   });
+  it('add something to test', function (){});
 });
