@@ -16,6 +16,13 @@ npm i -g watch-cli
 watch -p "**/*.js" -c "npm test"
 ```
 
+### Options
+
+Short | Long | Type | Description
+---|---|---|---
+`-p` | `--pattern` | `string` | [`glob`](https://github.com/isaacs/node-glob) pattern you are want to watch.
+`-c` | `--command` | `string` | Command to execute on watched files change.
+
 ## Author
 
 **Brian Woodward**
