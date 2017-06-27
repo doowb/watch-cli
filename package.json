@@ -36,6 +36,7 @@
     "gaze": "^0.5.1",
     "lodash": "^3.5.0",
     "minimist": "^1.1.1",
+    "supports-color": "^4.0.0",
     "verbalize": "^0.1.2"
   },
   "keywords": [

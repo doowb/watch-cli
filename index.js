@@ -3,6 +3,10 @@ const gaze = require('gaze');
 const _ = require('lodash');
 
 const exec = require('child_process').exec;
+const supportsColor = require('supports-color');
+const childEnv = _.assign({
+  FORCE_COLOR: supportsColor ? 1 : undefined
+}, process.env)
 
 var strip = function (str) {
   var re = /^=(.*)$/;
@@ -25,7 +29,7 @@ var watch = function (options) {
 
   var runCmd = function(cmd, cb) {
     log.write('Running ' + cmd);
-    var cp = exec(cmd, {}, function(err, stdout, stderr) {
+    var cp = exec(cmd, { env: childEnv }, function(err, stdout, stderr) {
       if(err) {
         cb(err);
       } else {
