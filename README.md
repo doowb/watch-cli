@@ -23,6 +23,13 @@ Short | Long | Type | Description
 `-p` | `--pattern` | `string` | [`glob`](https://github.com/isaacs/node-glob) pattern you are want to watch.
 `-c` | `--command` | `string` | Command to execute on watched files change.
 
+### Multi Patterns
+
+Is it possible to provide multi paterns, so if one of the files changed, the command will execute.
+```
+watch -p file1.js -p file2.fs -c command
+```
+
 ## Author
 
 **Brian Woodward**
