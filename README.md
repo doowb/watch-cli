@@ -25,7 +25,7 @@ Short | Long | Type | Description
 
 ### Multi Patterns
 
-Is it possible to provide multi paterns, so if one of the files changed, the command will execute.
+It is possible to provide multi paterns, so if one of the files changed, the command will execute.
 ```
 watch -p file1.js -p file2.fs -c command
 ```
