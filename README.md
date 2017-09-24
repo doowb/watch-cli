@@ -30,6 +30,28 @@ It is possible to provide multi paterns, so if one of the files changed, the com
 watch -p file1.js -p file2.fs -c command
 ```
 
+### Exported environment variables
+
+Environment variables available from the command string:
+
+```
+FILENAME           Relative filename.
+ABSOLUTE_FILENAME  Asolute filename.
+EVENT              Event type. Is either 'changed', 'deleted' or 'added'.
+```
+
+Use it like this in Linux/macOS:
+
+```
+$ watch -p '**/*.js' -c 'jshint $FILENAME'
+```
+
+In Windows:
+
+```
+> watch -p "**/*.js" -c "jshint %FILENAME%"
+```
+
 ## Author
 
 **Brian Woodward**
