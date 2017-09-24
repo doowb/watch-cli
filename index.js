@@ -1,5 +1,7 @@
 const log = require('verbalize');
 const gaze = require('gaze');
+const path = require('path');
+const process = require('process');
 const _ = require('lodash');
 
 const exec = require('child_process').exec;
@@ -27,9 +29,13 @@ var watch = function (options) {
     child.pipe(output);
   };
 
-  var runCmd = function(cmd, cb) {
+  var runCmd = function(cmd, filepath, event, cb) {
     log.write('Running ' + cmd);
-    var cp = exec(cmd, { env: childEnv }, function(err, stdout, stderr) {
+    var env = childEnv;
+    env.ABSOLUTE_FILENAME = filepath;
+    env.FILENAME = path.relative(process.cwd(), filepath);
+    env.EVENT = event;
+    var cp = exec(cmd, { env: env }, function(err, stdout, stderr) {
       if(err) {
         cb(err);
       } else {
@@ -59,7 +65,7 @@ var watch = function (options) {
           lastEvent = now;
           return;
         }
-        runCmd(command, function (err) {
+        runCmd(command, filepath, event, function (err) {
           running = false;
           log.write('Finished ' + command);
           log.write('Watching started');
