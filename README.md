@@ -43,13 +43,13 @@ EVENT              Event type. Is either 'changed', 'deleted' or 'added'.
 Use it like this in Linux/macOS:
 
 ```
-$ watch '**/*.js' -c 'jshint $FILENAME'
+$ watch -p '**/*.js' -c 'jshint $FILENAME'
 ```
 
 In Windows:
 
 ```
-> watch "**/*.js" -c "jshint %FILENAME%"
+> watch -p "**/*.js" -c "jshint %FILENAME%"
 ```
 
 ## Author
